@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <title>Gem Stones</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <h1 class="text-info mx-auto">Reach the magic number</h1>
+    </nav>
+
+    <div class="jumbotron py-3">
+        <p class="lead my-0">You will be given a random number at the start of the game</p>
+        <p class="lead my-0">There are four crystals below. By clickin on a crystal yoo will add a specific amount of
+            points to your
+            total
+            score</p>
+        <p class="lead my-0"> You win the game by matching your total score to the random number, you lose the game if
+            your total score
+            goes
+            above the random number.</p>
+        <P class="lead my-0">The value of each crystal is hidden from you until you click on it</P>
+        <P class="lead my-0">Each time when the game starts, the game will change the values of each crystal</P>
+        <h1 class="display-4 text-center" id="objective"></h1>
+        <div class="text-center">
+            <button>
+                <img src="./assets/images/imagen1.jpg" class="gem" id="imagen1">
+            </button>
+            <button>
+                <img src="./assets/images/imagen2.jpg" class="gem" id="imagen2">
+            </button>
+            <button>
+                <img src="./assets/images/imagen3.jpg" class="gem" id="imagen3">
+            </button>
+            <button>
+                <img src="./assets/images/imagen4.jpg" class="gem" id="imagen4">
+            </button>
+        </div>
+        <hr class="my-4">
+
+        <div class="card-deck">
+            <div class="card text-white bg-primary">
+                <div class="card-body">
+                    <h5 class="card-title">Total wins:</h5>
+                    <h3 class="card-text text-center" id="wins">0</h3>
+                </div>
+            </div>
+            <div class="card text-white bg-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Your count so far:</h5>
+                    <h3 class="card-text text-center" id="userscore"></h3>
+                </div>
+            </div>
+            <div class="card text-white bg-danger">
+                <div class="card-body">
+                    <h5 class="card-title">Total losses:</h5>
+                    <h3 class="card-text text-center" id="losses">0</h3>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <a class="btn btn-secondary btn-lg btn-block" id="restart" href="#" role="button">Start all over again</a>
+    </div>
+
+    <script src="./assets/javascript/game.js"></script>
+
+</body>
